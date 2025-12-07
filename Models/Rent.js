@@ -13,7 +13,7 @@ const rentSchema = new mongoose.Schema({
     expireAt: {
       type: Date,
       required: true,
-      expires: 7200 // Auto delete after 2 minutes
+      expires: 7200 
     }
 
     
