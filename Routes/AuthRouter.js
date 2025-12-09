@@ -3,10 +3,13 @@ const router = require('express').Router();
 const { signup, login, googleLogin } = require('../Controllers/AuthController');
 const { signupValidation, loginValidation } = require('../Middlewares/AuthValidation');
 
-router.post('/login', loginValidation, login);
+// NORMAL SIGNUP
 router.post('/signup', signupValidation, signup);
 
-// New route for Google Login (No middleware validation needed for the code itself)
+// NORMAL LOGIN
+router.post('/login', loginValidation, login);
+
+// GOOGLE LOGIN (using AuthController googleLogin)
 router.post('/google', googleLogin);
 
 module.exports = router;
