@@ -7,7 +7,7 @@ const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
 // 1. यदि आप react-google-login/gapi/Google Sign-In API का उपयोग कर रहे हैं:
 const REDIRECT_URI = 'postmessage'; 
 // 2. या कभी-कभी, यह आपका Frontend बेस URL होता है (जाँच करें!)
-// const REDIRECT_URI = 'https://bookmyridetoday.co.in';
+// const REDIRECT_URI = 'https://book-my-ride-3.onrender.com';
 
 exports.oauth2client = new google.auth.OAuth2(
     GOOGLE_CLIENT_ID,
